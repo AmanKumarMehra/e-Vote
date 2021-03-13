@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">E-Voting</string>
+    <string name="campaign">Campaign</string>
+    <string name="about_us">About Us</string>
+    <string name="political_news">Political News</string>
+    <string name="share">Share</string>
 </resources>
