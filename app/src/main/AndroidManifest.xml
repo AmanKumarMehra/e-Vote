@@ -9,18 +9,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.EVoting">
-        <activity android:name=".User_SignUp"></activity>
-        <activity android:name=".Dash_Board" />
-        <activity android:name=".Admin_SignUp" />
-        <activity android:name=".UserLogin" />
-        <activity android:name=".AdminLogin" />
-        <activity android:name=".Select" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".Dash_Board">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".User_SignUp" />
+        <activity android:name=".Admin_SignUp" />
+        <activity android:name=".UserLogin" />
+        <activity android:name=".AdminLogin" />
+        <activity android:name=".Select" />
+        <activity android:name=".MainActivity">
+
         </activity>
     </application>
 
