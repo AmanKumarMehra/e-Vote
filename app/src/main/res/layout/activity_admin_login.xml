@@ -72,6 +72,7 @@
         android:layout_marginRight="20dp"
         android:layout_marginLeft="20dp"
         android:text="GO"
+        android:onClick="call_dash"
         android:textSize="18sp"
         android:backgroundTint="@color/cardview_dark_background"/>
 

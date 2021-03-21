@@ -22,8 +22,9 @@ public class Dash_Board extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.activity_dash__board);
+
+
         setUptoolBar(); //function for setting the toolbar and navigation drawer
         navigation = findViewById(R.id.navigaionView);
         /****
@@ -61,6 +62,6 @@ public class Dash_Board extends AppCompatActivity {
         actionbartoggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.app_name, R.string.app_name);
         drawerLayout.addDrawerListener(actionbartoggle);
         actionbartoggle.syncState();
-
     }
+
 }

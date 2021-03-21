@@ -26,7 +26,7 @@
             android:layout_marginTop="40dp"/>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/aadhar_num"
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Aadhar Number"
@@ -34,6 +34,7 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/aadhar_num"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="date"/>
@@ -41,7 +42,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/location"
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Location"
@@ -49,6 +50,7 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/location"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="text"/>
@@ -56,7 +58,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/age"
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Age"
@@ -64,6 +66,7 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/age"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="date"/>
@@ -71,7 +74,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/phone_no"
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Phone Number (linked with Aadhar)"
@@ -79,6 +82,7 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/phone_no"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="date"/>
@@ -86,7 +90,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/User_Id"
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="User_Id"
@@ -94,6 +98,7 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/User_Id"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="text"/>
@@ -101,7 +106,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/password"
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Password"
@@ -109,11 +114,13 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="text"/>
 
         </com.google.android.material.textfield.TextInputLayout>
+
 
 
         <LinearLayout
@@ -122,7 +129,6 @@
             android:orientation="horizontal">
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/txt_path"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="9"
@@ -131,6 +137,7 @@
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txt_path1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="text"/>
@@ -146,10 +153,10 @@
                 android:layout_weight="1"
                 android:layout_marginTop="16dp"
                 android:layout_marginLeft="10dp"
+
                 android:src="@drawable/attach2"/>
 
         </LinearLayout>
-
 
 
         <LinearLayout
@@ -158,15 +165,15 @@
             android:orientation="horizontal">
 
             <com.google.android.material.textfield.TextInputLayout
-
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="9"
-                android:hint="Birth Certificate / 10th Marksheet"
+                android:hint="Aadhar Card"
                 android:layout_marginTop="10dp"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txt_path2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="text"/>
@@ -182,11 +189,14 @@
                 android:layout_weight="1"
                 android:layout_marginTop="16dp"
                 android:layout_marginLeft="10dp"
+
                 android:src="@drawable/attach2"/>
 
         </LinearLayout>
 
+
         <Button
+            android:id="@+id/register"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Resister"
@@ -195,6 +205,7 @@
             android:layout_marginTop="10dp"/>
 
         <Button
+            android:id="@+id/have_account"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Already have an account? LogIn"
