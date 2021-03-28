@@ -17,7 +17,7 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/purple_700"
+            android:background="@color/cardview_dark_background"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             app:title="E vote"
             app:titleTextColor="#FCFDFD">

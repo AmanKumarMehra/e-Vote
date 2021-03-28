@@ -4,4 +4,26 @@
     <string name="about_us">About Us</string>
     <string name="political_news">Political News</string>
     <string name="share">Share</string>
+    <string name="go">GO</string>
+    <string name="admin_login">Admin Login</string>
+    <string name="sign_in_to_continue">Sign in to continue</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="todo">TODO</string>
+    <string name="signup">SignUp</string>
+    <string name="aadhar_number">Aadhar Number</string>
+    <string name="location">Location</string>
+    <string name="age">Age</string>
+    <string name="phone_number_linked_with_aadhar">Phone Number (linked with Aadhar)</string>
+    <string name="user_id">User_Id</string>
+
+    <string name="aadhar_card">Aadhar Card</string>
+
+    <string name="resister">Resister</string>
+    <string name="already_have_an_account_login">Already have an account? LogIn</string>
+
+    <string name="forgot_password">Forgot Password</string>
+
+    <string name="enter_otp_here">Enter OTP here</string>
+    <string name="verify_and_signin">Verify and Signin</string>
 </resources>
