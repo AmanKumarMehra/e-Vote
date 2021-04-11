@@ -9,6 +9,7 @@
     android:id="@+id/drawer"
     tools:context=".Dash_Board">
 
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -59,6 +60,7 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </androidx.cardview.widget.CardView>
+
         <androidx.cardview.widget.CardView
             android:layout_width="150dp"
             android:layout_height="150dp"
@@ -78,8 +80,7 @@
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                >
+                android:layout_height="match_parent">
 
                 <ImageView
                     android:id="@+id/imageView2"
@@ -123,7 +124,6 @@
 
 
     </RelativeLayout>
-
 
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/navigaionView"

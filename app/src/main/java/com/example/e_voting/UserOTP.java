@@ -34,7 +34,7 @@ public class UserOTP extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_o_t_p);
 
-        phonenumber=getIntent().getStringExtra("mobile").toString();
+        phonenumber=getIntent().getStringExtra("mobile");
 
 
         t2=(EditText)findViewById(R.id.t2);
