@@ -21,5 +21,8 @@ public class AdminLogin extends AppCompatActivity {
     public void call_dash(View view){
         Intent intent = new Intent(this, Dash_Board.class);
         startActivity(intent);
+
+        
+
     }
 }

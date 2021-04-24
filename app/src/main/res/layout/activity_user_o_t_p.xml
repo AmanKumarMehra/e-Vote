@@ -12,16 +12,18 @@
         android:layout_height="58dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:hint="Enter OTP here"
+        android:hint="@string/enter_otp_here"
         android:textSize="20sp"
         android:layout_marginTop="230dp"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+         />
 
     <Button
         android:id="@+id/b2"
         android:layout_width="251dp"
         android:layout_height="50dp"
-        android:text="Verify and Signin"
+        android:text="@string/verify_and_signin"
+        android:background="@color/cardview_dark_background"
         android:textSize="20sp"
         android:layout_marginTop="320dp"
         android:layout_centerHorizontal="true"/>
