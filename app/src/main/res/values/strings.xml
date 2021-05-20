@@ -27,4 +27,6 @@
     <string name="enter_otp_here">Enter OTP here</string>
     <string name="verify_and_signin">Verify and Sign in</string>
     <string name="cast_vote">Cast Vote</string>
+    <string name="enter_your_campaign">Enter your Campaign</string>
+    <string name="author_name">Author Name</string>
 </resources>
