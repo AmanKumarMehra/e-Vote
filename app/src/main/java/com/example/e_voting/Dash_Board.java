@@ -6,8 +6,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
@@ -17,6 +20,7 @@ public class Dash_Board extends AppCompatActivity {
     Toolbar toolbar;
     DrawerLayout drawerLayout;
     ActionBarDrawerToggle actionbartoggle;
+    Button btntostartcampaign;
 
 
 
@@ -26,6 +30,16 @@ public class Dash_Board extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dash__board);
+
+
+
+        btntostartcampaign = findViewById(R.id.btnToStartCampaignActivity);
+        btntostartcampaign.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Dash_Board.this, StartCampaign.class));
+            }
+        });
 
 
         setUptoolBar(); //function for setting the toolbar and navigation drawer
