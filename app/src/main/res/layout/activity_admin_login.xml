@@ -31,8 +31,8 @@
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/username"
-        android:hint="@string/username"
+        android:id="@+id/user"
+        android:hint="E-mail"
         android:layout_below="@id/slogan_name"
         android:layout_marginTop="20dp"
         android:layout_marginLeft="20dp"
@@ -40,6 +40,7 @@
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/eMail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
@@ -48,16 +49,17 @@
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/password"
+        android:id="@+id/pass"
         android:hint="@string/password"
         app:passwordToggleEnabled="true"
-        android:layout_below="@id/username"
+        android:layout_below="@id/user"
         android:layout_marginTop="5dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passWord"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPassword"/>
@@ -65,14 +67,14 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
+        android:id="@+id/go"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/password"
+        android:layout_below="@id/pass"
         android:layout_marginTop="10dp"
         android:layout_marginRight="20dp"
         android:layout_marginLeft="20dp"
         android:text="@string/go"
-        android:onClick="call_dash"
         android:textSize="18sp"
         android:backgroundTint="@color/cardview_dark_background"/>
 

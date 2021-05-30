@@ -13,17 +13,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EVoting">
         <activity android:name=".CandidateList">
+
+        </activity>
+        <activity android:name=".StartCampaign" />
+        <activity android:name=".ElectionCampaign" />
+        <activity android:name=".UserDashBoard" />
+        <activity android:name=".UserOTP" />
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".StartCampaign" />
-        <activity android:name=".ElectionCampaign" />
-        <activity android:name=".UserDashBoard" />
-        <activity android:name=".UserOTP" />
-        <activity android:name=".MainActivity" />
         <activity android:name=".User_SignUp" />
         <activity android:name=".UserLogin" />
         <activity android:name=".AdminLogin" />

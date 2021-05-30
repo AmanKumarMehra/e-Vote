@@ -1,5 +1,6 @@
 package com.example.e_voting;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ProgressDialog;
@@ -9,6 +10,7 @@ import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.text.TextUtils;
 import android.view.View;
 import android.view.WindowManager;
 import android.webkit.MimeTypeMap;
@@ -16,8 +18,12 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.Task;
 import com.google.android.material.textfield.TextInputEditText;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.storage.FirebaseStorage;
@@ -45,6 +51,7 @@ public class User_SignUp extends AppCompatActivity {
 
     StorageReference storageReference;
     DatabaseReference databaseReference;
+    FirebaseAuth fAuth;
     ProgressDialog progressDialog ;
 
     ImageView AttachBtn1;
@@ -64,6 +71,7 @@ public class User_SignUp extends AppCompatActivity {
 
         storageReference = FirebaseStorage.getInstance().getReference("Images");
         databaseReference = FirebaseDatabase.getInstance().getReference("Images");
+        fAuth = FirebaseAuth.getInstance();
 
         aadhar_num_data = (TextInputEditText)findViewById(R.id.aadhar_num);
         location_data = (TextInputEditText)findViewById(R.id.location);
@@ -113,6 +121,8 @@ public class User_SignUp extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+                SignUp();
+
                 UploadImage();
 
             }
@@ -127,6 +137,39 @@ public class User_SignUp extends AppCompatActivity {
             }
         });
 
+    }
+
+    private void SignUp() {
+
+        String email = used_id_data.getText().toString().trim();
+        String password = password_data.getText().toString().trim();
+
+        if(TextUtils.isEmpty(email)){
+            used_id_data.setError("Email is required");
+            return;
+        }
+        if(TextUtils.isEmpty(password)){
+            password_data.setError("Email is required");
+            return;
+        }
+
+        if(password.length() < 6){
+            password_data.setError("Password is too short");
+            return;
+        }
+
+        fAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+            @Override
+            public void onComplete(@NonNull Task<AuthResult> task) {
+                if(task.isSuccessful()){
+                    Toast.makeText(User_SignUp.this, "Account created", Toast.LENGTH_SHORT).show();
+
+                }
+                else {
+                    Toast.makeText(User_SignUp.this, "Error!"+ task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
     }
 
 

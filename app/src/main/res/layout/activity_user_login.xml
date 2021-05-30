@@ -29,28 +29,30 @@
         android:layout_marginRight="20dp">
 
         <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
+
             android:layout_height="wrap_content"
-            android:id="@+id/username"
-            android:hint="@string/username"
-            android:transitionName="logo_text"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            android:hint="@string/e_mail"
+            android:transitionName="logo_text">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/email"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/password"
+
             android:hint="@string/password"
             app:passwordToggleEnabled="true"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"/>
@@ -79,13 +81,13 @@
             />
 
         <Button
+            android:id="@+id/go_to_Register"
             android:layout_width="200dp"
             android:layout_height="50dp"
             android:layout_gravity="right"
             android:backgroundTint="@color/cardview_dark_background"
             android:elevation="0dp"
             android:text="New User? Sign Up"
-            android:onClick="signUp"
             android:textColor="@color/white" />
 
     </LinearLayout>
