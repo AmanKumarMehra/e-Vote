@@ -18,6 +18,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.google.android.gms.common.internal.Constants;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
@@ -221,7 +222,8 @@ public class User_SignUp extends AppCompatActivity {
 
             // uploading aadhar card and storing its URL in url1[0]
             final String[] url1 = new String[2];
-            StorageReference storageReference1 = storageReference.child(System.currentTimeMillis() + "." + GetFileExtension(FilePathUri1));
+
+            StorageReference storageReference1 = storageReference.child(System.currentTimeMillis() + "." + GetFileExtension(FilePathUri2));
             storageReference1.putFile(FilePathUri1).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
                 @Override
                 public void onSuccess(UploadTask.TaskSnapshot taskSnapshot1) {
@@ -230,7 +232,7 @@ public class User_SignUp extends AppCompatActivity {
             });
 
             // uploading DOB certificate/ 10th Marksheet
-            StorageReference storageReference2 = storageReference.child(System.currentTimeMillis() + "." + GetFileExtension(FilePathUri2));
+            StorageReference storageReference2 = storageReference.child(System.currentTimeMillis() + "." + GetFileExtension(FilePathUri1));
             storageReference2.putFile(FilePathUri2)
                     .addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
                         @Override
