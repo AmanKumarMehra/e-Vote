@@ -246,9 +246,10 @@ public class User_SignUp extends AppCompatActivity {
                             String phoneNumData = phone_num_data.getText().toString().trim();
                             String userIdData = used_id_data.getText().toString().trim();
                             String passwordData = password_data.getText().toString().trim();
+                            String verified = "false";
 
                             @SuppressWarnings("VisibleForTests")
-                            uploadinfo imageUploadInfo = new uploadinfo(aadharNumData, locationData, ageData, phoneNumData, userIdData, passwordData, url1[0],taskSnapshot2.getUploadSessionUri().toString());
+                            uploadinfo imageUploadInfo = new uploadinfo(aadharNumData, locationData, ageData, phoneNumData, userIdData, passwordData, verified, url1[0],taskSnapshot2.getUploadSessionUri().toString());
                             String ImageUploadId = databaseReference.push().getKey();
                             databaseReference.child(ImageUploadId).setValue(imageUploadInfo);
 

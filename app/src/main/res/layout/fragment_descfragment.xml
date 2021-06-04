@@ -42,7 +42,7 @@
                 android:layout_marginTop="20dp"/>
 
             <TextView
-                android:id="@+id/aadhar_num"
+                android:id="@+id/aadhar_num_holder"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
@@ -68,7 +68,7 @@
                 android:layout_marginTop="20dp"/>
 
             <TextView
-                android:id="@+id/age"
+                android:id="@+id/ageholder"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
@@ -94,7 +94,7 @@
                 android:layout_marginTop="20dp"/>
 
             <TextView
-                android:id="@+id/location"
+                android:id="@+id/locationholder"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
@@ -120,7 +120,7 @@
                 android:layout_marginTop="20dp"/>
 
             <TextView
-                android:id="@+id/phone_no"
+                android:id="@+id/phone_no_holder"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -132,6 +132,16 @@
 
         </LinearLayout>
 
+
+        <TextView
+            android:id="@+id/verifiedholder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:text="Verified User"
+            android:textColor="#000"
+            android:textSize="30sp" />
 
     </LinearLayout>
 

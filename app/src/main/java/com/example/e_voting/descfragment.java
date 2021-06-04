@@ -21,17 +21,18 @@ public class descfragment extends Fragment {
 
     private String mParam1;
     private String mParam2;
-    String aadharNumData, locationData, imageURL2, ageData, phoneNumData;
+    String aadharNumData, locationData, imageURL2, ageData, phoneNumData, verified;
 
     public descfragment() {
 
     }
 
-    public descfragment(String aadharNumData, String locationData, String ageData, String phoneNumData, String imageURL2) {
+    public descfragment(String aadharNumData, String locationData, String ageData, String phoneNumData, String verified,String imageURL2) {
         this.aadharNumData=aadharNumData;
         this.locationData=locationData;
         this.ageData=ageData;
         this.phoneNumData=phoneNumData;
+        this.verified=verified;
         this.imageURL2=imageURL2;
     }
 
@@ -60,17 +61,24 @@ public class descfragment extends Fragment {
         View view=inflater.inflate(R.layout.fragment_descfragment, container, false);
 
         ImageView imageholder=view.findViewById(R.id.imageholder);
-        TextView aadhar_num=view.findViewById(R.id.aadhar_num);
-        TextView age=view.findViewById(R.id.age);
-        TextView location=view.findViewById(R.id.location);
-        TextView phone = view.findViewById(R.id.phone_no);
+        TextView aadhar_num_holder=view.findViewById(R.id.aadhar_num_holder);
+        TextView ageholder=view.findViewById(R.id.ageholder);
+        TextView locationholder=view.findViewById(R.id.locationholder);
+        TextView phone_no_holder = view.findViewById(R.id.phone_no_holder);
+        TextView verifiedholder = view.findViewById(R.id.verifiedholder);
 
-        aadhar_num.setText(aadharNumData);
-        age.setText(ageData);
-        location.setText(locationData);
-        phone.setText(phoneNumData);
+        aadhar_num_holder.setText(aadharNumData);
+        ageholder.setText(ageData);
+        locationholder.setText(locationData);
+        phone_no_holder.setText(phoneNumData);
         Glide.with(getContext()).load(imageURL2).into(imageholder);
 
+        if(verified.equals("true")){
+            verifiedholder.setText("Verified User");
+        }
+        else{
+            verifiedholder.setText("Not Verified");
+        }
 
         return  view;
     }

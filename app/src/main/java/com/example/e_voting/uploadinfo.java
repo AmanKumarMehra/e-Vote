@@ -8,17 +8,22 @@ public class uploadinfo {
     public String phoneNumData;
     public String userIdData;
     public String passwordData;
+    public String verified;
     public String imageURL1;
     public String imageURL2;
-    public uploadinfo(){}
 
-    public uploadinfo(String aadharNumData, String locationData, String ageData, String phoneNumData, String userIdData, String passwordData, String imageURL1, String imageURL2) {
+    public uploadinfo(){
+
+    }
+
+    public uploadinfo(String aadharNumData, String locationData, String ageData, String phoneNumData, String userIdData, String passwordData, String verified, String imageURL1, String imageURL2) {
         this.aadharNumData = aadharNumData;
         this.locationData = locationData;
         this.ageData = ageData;
         this.phoneNumData = phoneNumData;
         this.userIdData = userIdData;
         this.passwordData = passwordData;
+        this.verified = verified;
         this.imageURL1= imageURL1;
         this.imageURL2= imageURL2;
     }
@@ -45,6 +50,10 @@ public class uploadinfo {
 
     public String getPasswordData() {
         return passwordData;
+    }
+
+    public String getVerified() {
+        return verified;
     }
 
     public String getImageURL1() {

@@ -6,9 +6,9 @@ public class model {
     String ageData;
     String imageURL2;
     String locationData;
-    String passwordData;
     String phoneNumData;
-    String userIdData;
+    String verified;
+
 
     // Empty Constructor
     public model() {
@@ -16,14 +16,13 @@ public class model {
     }
 
     // parametrized Constructor
-    public model(String aadharNumData, String ageData, String imageURL2, String locationData, String passwordData, String phoneNumData, String userIdData) {
+    public model(String aadharNumData, String ageData, String imageURL2, String locationData,  String phoneNumData, String verified) {
         this.aadharNumData = aadharNumData;
         this.ageData = ageData;
         this.imageURL2 = imageURL2;
         this.locationData = locationData;
-        this.passwordData = passwordData;
         this.phoneNumData = phoneNumData;
-        this.userIdData = userIdData;
+        this.verified = verified;
     }
 
 
@@ -60,13 +59,7 @@ public class model {
         this.locationData = locationData;
     }
 
-    public String getPasswordData() {
-        return passwordData;
-    }
 
-    public void setPasswordData(String passwordData) {
-        this.passwordData = passwordData;
-    }
 
     public String getPhoneNumData() {
         return phoneNumData;
@@ -76,11 +69,11 @@ public class model {
         this.phoneNumData = phoneNumData;
     }
 
-    public String getUserIdData() {
-        return userIdData;
+    public String getVerified() {
+        return verified;
     }
 
-    public void setUserIdData(String userIdData) {
-        this.userIdData = userIdData;
+    public void setVerified(String verified) {
+        this.verified = verified;
     }
 }
