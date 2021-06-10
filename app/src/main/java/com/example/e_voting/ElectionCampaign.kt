@@ -1,5 +1,6 @@
 package com.example.e_voting
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -10,6 +11,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.firebase.ui.firestore.FirestoreRecyclerAdapter
 import com.firebase.ui.firestore.FirestoreRecyclerOptions
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.Query
 
@@ -21,6 +23,31 @@ class ElectionCampaign : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_election_campaign)
+
+        ////////////// Converted from Java to Kotlin
+        val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottom_nav)
+
+        bottomNavigationView.selectedItemId = R.id.campaign
+
+        bottomNavigationView.setOnNavigationItemSelectedListener(BottomNavigationView.OnNavigationItemSelectedListener { item ->
+            when (item.itemId) {
+                R.id.campaign ->  return@OnNavigationItemSelectedListener true
+
+                R.id.vote -> {
+                    startActivity(Intent(applicationContext, CandidateList::class.java))
+                    overridePendingTransition(0, 0)
+                    return@OnNavigationItemSelectedListener true
+                }
+
+                R.id.result -> {
+                    startActivity(Intent(applicationContext, Result::class.java))
+                    overridePendingTransition(0, 0)
+                    return@OnNavigationItemSelectedListener true
+                }
+            }
+            false
+        })
+        //////////////
 
         recylerCampaign = findViewById(R.id.RecyclerCampaign)
         fb = FirebaseFirestore.getInstance()

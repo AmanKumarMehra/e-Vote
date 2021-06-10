@@ -1,5 +1,6 @@
 package com.example.e_voting;
 
+import android.graphics.Color;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -75,9 +76,11 @@ public class descfragment extends Fragment {
 
         if(verified.equals("true")){
             verifiedholder.setText("Verified User");
+            verifiedholder.setTextColor(Color.parseColor("#238E32"));
         }
         else{
             verifiedholder.setText("Not Verified");
+            verifiedholder.setTextColor(Color.parseColor("#FF0000"));
         }
 
         return  view;
