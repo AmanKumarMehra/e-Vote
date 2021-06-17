@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
 
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/cardNews"
     android:layout_width="match_parent"
-    android:layout_height="320dp"
+    android:layout_height="wrap_content"
     android:layout_margin="8dp"
     android:orientation="vertical">
 
@@ -19,70 +20,56 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:layout_alignParentRight="true"
             android:layout_marginStart="0dp"
-            android:layout_marginTop="273dp"
-            android:textAlignment="center"
-            android:text="@string/party_name"
-
-            android:textSize="10sp"
-            android:gravity="center_horizontal"
             android:layout_marginLeft="0dp"
-            android:layout_alignParentEnd="true" />
+            android:layout_marginTop="19dp"
+            android:gravity="center_horizontal"
+            android:text="@string/party_name"
+            android:textAlignment="center"
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/txtCandidateName"
-            android:layout_width="match_parent"
-            android:layout_height="35dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:layout_alignParentRight="true"
 
-            android:layout_marginLeft="2dp"
-            android:layout_marginTop="223dp"
-            android:layout_marginRight="-2dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="137dp"
+            android:gravity="center_horizontal"
             android:text="@string/candidate_name"
-            android:textStyle="bold"
             android:textAlignment="center"
             android:textColorHint="#282C2C"
             android:textSize="20sp"
-            android:gravity="center_horizontal"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="2dp"
-            android:layout_marginEnd="-2dp" />
+            android:textStyle="bold" />
 
-
-        <ImageView
-        android:id="@+id/imgCandidate"
-        android:layout_width="match_parent"
-        android:layout_height="198dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_centerVertical="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="0dp"
-        android:src="@mipmap/ic_launcher"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true" />
-
-        <ImageView
-            android:id="@+id/imgPartySymbol"
-            android:layout_width="72dp"
-            android:layout_height="54dp"
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:layout_marginStart="319dp"
-            android:layout_marginLeft="319dp"
-            android:layout_marginTop="260dp"
-            android:layout_marginEnd="4dp"
-            android:layout_marginRight="4dp"
+            android:layout_marginStart="42dp"
+            android:layout_marginLeft="42dp"
+            android:layout_marginTop="45dp"
+            android:src="@mipmap/ic_launcher"
+            app:civ_border_color="#ffffff"
+            app:civ_border_width="2dp" />
+
+        <ImageView
+            android:id="@+id/imgPartySymbol"
+            android:layout_width="34dp"
+            android:layout_height="35dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="161dp"
+            android:layout_marginLeft="161dp"
+            android:layout_marginTop="80dp"
             android:src="@mipmap/ic_launcher" />
 
         <Button
@@ -92,19 +79,12 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="27dp"
-            android:layout_marginLeft="27dp"
-            android:layout_marginTop="260dp"
-            android:layout_marginEnd="274dp"
-            android:layout_marginRight="274dp"
-            android:layout_marginBottom="12dp"
+            android:layout_marginStart="266dp"
+            android:layout_marginLeft="266dp"
+            android:layout_marginTop="105dp"
+            android:backgroundTint="@color/cardview_dark_background"
             android:text="Vote"
-            android:textColor="@color/white"/>
-
-
+            android:textColor="@color/white" />
     </RelativeLayout>
 
 
