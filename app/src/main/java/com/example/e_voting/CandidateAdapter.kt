@@ -27,6 +27,12 @@ class CandidateAdapter(options: FirebaseRecyclerOptions<candidateModel>) :
             .into(holder.imgCandidate)
         Glide.with(holder.imgPartySymbol.getContext()).load(model.getPartySymbol())
             .into(holder.imgPartySymbol)
+
+        holder.btnCastVote.setOnClickListener(View.OnClickListener {
+            //TODO Voting logics
+        })
+
+
     }
 
     override fun onCreateViewHolder(
@@ -47,7 +53,7 @@ class CandidateAdapter(options: FirebaseRecyclerOptions<candidateModel>) :
 
         init {
             txtCandidateName = itemView.findViewById(R.id.txtCandidateName)
-            imgCandidate = itemView.findViewById(R.id.imgCandidate)
+            imgCandidate = itemView.findViewById(R.id.profile_image)
             txtPartyName = itemView.findViewById(R.id.txtPartyName)
             imgPartySymbol = itemView.findViewById(R.id.imgPartySymbol)
             btnCastVote = itemView.findViewById(R.id.btnCastVote)

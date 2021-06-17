@@ -16,14 +16,16 @@
         <activity android:name=".Users_Requests">
 
         </activity>
-        <activity android:name=".CandidateList" />
-        <activity android:name=".StartCampaign"></activity>
-        <activity android:name=".ElectionCampaign">
+        <activity android:name=".CandidateList">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+        </activity>
+        <activity android:name=".StartCampaign"></activity>
+        <activity android:name=".ElectionCampaign">
         </activity>
         <activity android:name=".UserDashBoard"></activity>
         <activity android:name=".UserOTP"></activity>
