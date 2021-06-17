@@ -12,29 +12,26 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.EVoting">
-        <activity android:name=".Result"></activity>
-        <activity android:name=".Users_Requests">
-
-        </activity>
+        <activity android:name=".Support"></activity>
+        <activity android:name=".Result" />
+        <activity android:name=".Users_Requests"></activity>
         <activity android:name=".CandidateList">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
-        <activity android:name=".StartCampaign"></activity>
-        <activity android:name=".ElectionCampaign">
-        </activity>
-        <activity android:name=".UserDashBoard"></activity>
-        <activity android:name=".UserOTP"></activity>
-        <activity android:name=".MainActivity"></activity>
-        <activity android:name=".User_SignUp"></activity>
-        <activity android:name=".UserLogin"></activity>
-        <activity android:name=".AdminLogin"></activity>
-        <activity android:name=".Select"></activity>
-        <activity android:name=".Dash_Board"></activity>
+        <activity android:name=".StartCampaign" />
+        <activity android:name=".ElectionCampaign"></activity>
+        <activity android:name=".UserDashBoard" />
+        <activity android:name=".UserOTP" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".User_SignUp" />
+        <activity android:name=".UserLogin" />
+        <activity android:name=".AdminLogin" />
+        <activity android:name=".Select" />
+        <activity android:name=".Dash_Board" />
     </application>
 
 </manifest>
